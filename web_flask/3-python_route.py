@@ -35,8 +35,8 @@ def c(text):
     return f"C {new_text}"
 
 
-@app.route('/python', defaults={'text': 'is_cool'})
 @app.route('/python/<text>')
+@app.route('/python', defaults={'text': 'is_cool'})
 def python(text):
     """
     The python page, displays Python followed by the
