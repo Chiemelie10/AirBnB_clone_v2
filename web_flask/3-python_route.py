@@ -32,12 +32,12 @@ def c(text):
     """
     new_text = text.replace('_', ' ')
 
-    return f"C {new_text}"
+    return "C {}".format(new_text)
 
 
+@app.route('/python')
 @app.route('/python/<text>')
-@app.route('/python', defaults={'text': 'is_cool'})
-def python(text):
+def python(text='is cool'):
     """
     The python page, displays Python followed by the
     value of the text variable (replace underscore _ symbols
