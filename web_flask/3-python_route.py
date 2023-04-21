@@ -45,7 +45,7 @@ def python(text='is cool'):
     """
     new_text = text.replace('_', ' ')
 
-    return "Python {}".format(nex_text)
+    return "Python {}".format(new_text)
 
 
 if __name__ == '__main__':
