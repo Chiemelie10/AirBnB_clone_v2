@@ -6,10 +6,12 @@ from flask import Flask
 app = Flask(__name__)
 """An instance of Flask."""
 
+
 @app.route('/', strict_slashes=False)
 def index():
-    """The index/home page."""
+    """This function returns Hello HBNB! in the index/home page."""
 
     return "Hello HBNB!"
+
 
 app.run(host='0.0.0.0', port='5000')
