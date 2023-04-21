@@ -32,7 +32,7 @@ def c(text):
     """
     new_text = text.replace('_', ' ')
 
-    return f"C {new_text}"
+    return "C {}".format(new_text)
 
 
 if __name__ == '__main__':
